@@ -1,15 +1,15 @@
 /* Importing font styles */
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap');
 /* Targeting full body */
 body {
     background-color: #1a1a1a;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
     padding: 0;
     color: #fff;
+    box-sizing: border-box;
 }
 /* portfolio text */
 #portfolio{
@@ -21,7 +21,7 @@ body {
 /* nav elements */
 .nav-elements {
     display: inline-block;
-    padding: 10px 20px;
+    padding: calc(1vw) calc(2vw);
     background-color: inherit;
     border-radius: 5px;
     transition: transform 0.3s ease;
@@ -43,16 +43,13 @@ nav {
     justify-content: space-between;
     background-color: #282828;
     align-items: center;
-    padding: 10px 20px;
+    padding: calc(2vh) calc(2vh);
 }
 nav ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-}
-nav ul li {
-    margin: 0 10px;
 }
 nav ul li a {
     color: #fff;
@@ -83,7 +80,6 @@ nav ul li a {
     }
     .skills-nav{
         color: #ffa116!important;
-        text-decoration: underline;
     }
     #portfolio{
         width: calc(30vw);
@@ -102,15 +98,15 @@ nav ul li a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 25px;
-        height: 20px;
+        width: calc(7vw);
+        height: calc(3vh);
         cursor: pointer;
         z-index: 3;
     }
     
     .btn-line {
         width: 100%;
-        height: 2px;
+        height: calc(0.4vh);
         background-color: #E90064;
         border-radius: 2px;
         transition: all 0.3s ease;
@@ -149,7 +145,7 @@ nav ul li a {
     }
     .mini-nav-child{
         display: inline;
-        padding: 2%;
+        padding: calc(2vh);
     }
     .nav-elements-mini{
         color: #E90064;
@@ -172,7 +168,6 @@ nav ul li a {
 .hide {
     display: none;
 }
-
 /* Social media section */
 .social-media {
     position: absolute;
@@ -210,8 +205,8 @@ nav ul li a {
     margin-right: auto;
     }
     .social-child{
-        margin: 5%;
-        font-size: 1em!important;
+        margin: calc(2vh);
+        font-size: calc(3vh)!important;
     }
     .icon{
         font-size: 1em;
@@ -224,10 +219,10 @@ nav ul li a {
     transform: translate(0, -50%);
     }
     .social-child{
-        margin: 15%;
+        margin: calc(2vh);
     }
     .icon{
-        font-size: 3em;
+        font-size: calc(3em);
     }
 }
 .social-child:hover{
@@ -296,6 +291,13 @@ nav ul li a {
         transform: rotate(90deg);
         position: absolute;
         top: 50%;
+        display: none!important;
+    }
+    .aside{
+        display: none!important;
+    }
+    #info{
+        display: none!important;
     }
 }
 @media (min-width:1024px)
@@ -332,7 +334,7 @@ nav ul li a {
     .chat-box1{
         display: inline;
         position: absolute;
-        margin: 1em;
+        margin: calc(1vh);
     }
 }
 @media (min-width:1024px) {
@@ -382,13 +384,15 @@ nav ul li a {
     border-radius: 2em;
 }
 .feedback-container{
-    margin: 4%;
+    margin: calc(1vh);
 }
 .form-group{
-    padding: 5%;
+    padding: calc(2vh);
+    width: fit-content;
+    height: fit-content;
 }
 label{
-    padding-right: 2%;
+    padding-right: calc(2vh);
 }
 .submit-btn{
     position: relative;
@@ -407,11 +411,14 @@ label{
 }
 #close_btn_feedback{
     position: absolute;
-    margin: 2%;
-    right: 24px;
+    right: calc(3vh);
     display: none;
     height: fit-content;
     width: fit-content;
+}
+.feedback-form{
+    display: flex;
+    flex-direction: column;
 }
 @media (max-width:1023px)
 {
@@ -420,8 +427,9 @@ label{
         height: fit-content;
         width: fit-content;
         position: absolute;
-        left: 3px;
-        bottom: 10%;
+        left: calc(4vw);
+        right: calc(4vw);
+        bottom: calc(8vh);
         border: thick solid #fff;
         z-index: 2;
         background-color: #000;
@@ -458,14 +466,6 @@ label{
 }
 @media (max-width: 1023px) {
     .copyright{
-        /* position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        opacity: 40%;
-        margin-left: auto;
-        margin-right: auto;
-        width: fit-content; */
         display: none;
     }
 
@@ -474,8 +474,8 @@ label{
 /* Skills container */
 .skills-container{
     position: absolute;
-    width: 70%;
-    height: 70%;
+    width: calc(70vw);
+    height: calc(70vh);
     top: 0;
     bottom: 0;
     left: 0;
@@ -485,9 +485,7 @@ label{
     align-items:center;
     justify-content:space-evenly;
     background-color: #1a1a1a;
-    opacity: 100%;
     flex-wrap: wrap;
-    flex-basis: 25%;
     overflow: auto;
     justify-content: center;
     border-radius: 2%;

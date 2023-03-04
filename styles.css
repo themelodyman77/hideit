@@ -320,25 +320,6 @@ nav ul li a {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
-/* .name-block h1::before{
-    content: '';
-    position: absolute;
-    display: block;
-    left: 10px;
-    bottom: 0;
-    right: 0;
-    height: 5%;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-    background-color: #f44e3a;
-    transform-origin: bottom right;
-    z-index: -3;
-    border-radius: 2rem;
-}
-.name-block h1:hover::before{
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}*/
 
 /* Chat box */
 .chat-btn-fa{
