@@ -528,7 +528,7 @@ label{
         height: calc(30vh);
         width: calc(20vw);
         overflow: auto;
-        text-align: justify;
+        text-align: center;
         border-radius: 2rem;
         border: thin solid #c0c0c0;
     }
@@ -551,6 +551,10 @@ label{
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     #lap-img{
         width: calc(30vw + 10vh);
@@ -565,8 +569,9 @@ label{
         height: calc(30vh);
         width: calc(60vw);
         overflow: scroll;
-        text-align: justify;
+        text-align: center;
         border-radius: 2rem;
+        border: thin solid #c0c0c0;
     }
     .welcome-txt{
         margin: calc(2vh);
