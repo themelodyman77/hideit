@@ -44,7 +44,7 @@
         text-align: center;
         border-radius: 2rem;
         border-top: thin solid #c0c0c0;
-        border-left: thin solid #c0c0c0;
+        /* border-left: thin solid #c0c0c0; */
     }
     .welcome-txt{
         margin: calc(2vh);
@@ -53,6 +53,12 @@
     #namasthe{
         font-size: 3em!important;
     }     
+}
+.welcome{
+    -ms-overflow-style : none;
+}
+.welcome::-webkit-scrollbar{
+    display: none;
 }
 @media (max-width:1023px) {
     .laptop{
@@ -85,7 +91,7 @@
         overflow: scroll;
         text-align: center;
         border-radius: 2rem;
-        border: thin solid #c0c0c0;
+        border-top: thin solid #c0c0c0;
     }
     .welcome-txt{
         margin: calc(2vh);
