@@ -80,6 +80,63 @@
 }
 @media (max-width:1023px) {
     #about{
-        display: none;
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: calc(70vh);
+        width: calc(70vw);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #hobbies,#favourites,#education,#acheivements{
+        display: flex;
+        position: relative;
+        margin: calc(2vh) 0;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about-amblem{
+        font-size: calc(3vh);
+    }
+    .fa-chess-queen{
+        color: #000;
+    }
+    .fa-heart{
+        color: #e90064;
+    }
+    .fa-school{
+        color: brown;
+    }
+    .fa-trophy{
+        color: gold;
+    }
+    .initial{
+        height: calc(5vh);
+        width: calc(60vw);
+        background-color: #fff;
+        border-radius: 2rem;
+        transition: height 1s;
+    }
+    .ab-child:hover{
+        height: calc(35vh);
+    }
+    .ab-child div:nth-child(2)
+    {
+        font-size: 1em;
+        color: #000;
+        text-align: center;
+    }
+    .ab-child{
+        overflow: scroll;
+    }
+    #description_about1,#description_about2,#description_about3,#description_about4{
+        padding: 4%;
     }
 }
