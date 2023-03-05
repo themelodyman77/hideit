@@ -79,3 +79,60 @@ document.getElementById("feedback-click1").addEventListener("click", function()
         document.getElementById("close_btn_feedback").style.display = "none";
     });
 });
+
+// About page
+for(var i=0;i<document.getElementsByClassName("ab-child").length;i++)
+{
+    console.log("IM in1");
+    var temp = document.getElementsByClassName("ab-child")[i];
+    if(temp.classList[0] == "initial")
+    {
+        console.log("IM in");
+        document.getElementById("description_about1").style.display = "none";
+        document.getElementById("description_about2").style.display = "none";
+        document.getElementById("description_about3").style.display = "none";
+        document.getElementById("description_about4").style.display = "none";
+    }
+}
+
+
+document.getElementById("hobbies").addEventListener("mouseover", (event) =>
+{
+    var temp_text = "description_about1";
+    document.getElementById(temp_text).style.display = "inline";
+});
+document.getElementById("hobbies").addEventListener("mouseleave", (event) =>
+{
+    var temp_text = "description_about1";
+    document.getElementById(temp_text).style.display = "none";
+});
+document.getElementById("favourites").addEventListener("mouseover", (event) =>
+{
+    var temp_text = "description_about2";
+    document.getElementById(temp_text).style.display = "inline";
+});
+document.getElementById("favourites").addEventListener("mouseleave", (event) =>
+{
+    var temp_text = "description_about2";
+    document.getElementById(temp_text).style.display = "none";
+});
+document.getElementById("education").addEventListener("mouseover", (event) =>
+{
+    var temp_text = "description_about3";
+    document.getElementById(temp_text).style.display = "inline";
+});
+document.getElementById("education").addEventListener("mouseleave", (event) =>
+{
+    var temp_text = "description_about3";
+    document.getElementById(temp_text).style.display = "none";
+});
+document.getElementById("acheivements").addEventListener("mouseover", (event) =>
+{
+    var temp_text = "description_about4";
+    document.getElementById(temp_text).style.display = "inline";
+});
+document.getElementById("acheivements").addEventListener("mouseleave", (event) =>
+{
+    var temp_text = "description_about4";
+    document.getElementById(temp_text).style.display = "none";
+});
