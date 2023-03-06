@@ -68,19 +68,59 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
     //we hide the emoji on click
     document.getElementById("hobbies").addEventListener("click", (event) =>
     {
+        console.log("hobbies clicked");
         document.getElementById("chess-queen").style.display = "none";
+        document.getElementById("description_about1").style.display = "inline";
+        document.onclick = function(div)
+        {
+            if(div.target.id !== 'hobbies')
+            {
+                document.getElementById("chess-queen").style.display = "inline";
+                document.getElementById("description_about1").style.display = "none";
+            }
+        };
     });
-    document.getElementById("heart").addEventListener("click", (event) =>
+    document.getElementById("favourites").addEventListener("click", (event) =>
     {
+        console.log("heart clicked");
         document.getElementById("heart").style.display = "none";
+        document.getElementById("description_about2").style.display = "inline";
+        document.onclick = function(div)
+        {
+            if(div.target.id !== 'heart')
+            {
+                document.getElementById("heart").style.display = "inline";
+                document.getElementById("description_about2").style.display = "none";
+            }
+        };
     });
-    document.getElementById("school").addEventListener("click", (event) =>
+    document.getElementById("education").addEventListener("click", (event) =>
     {
+        console.log("school clicked");
         document.getElementById("school").style.display = "none";
+        document.getElementById("description_about3").style.display = "inline";
+        document.onclick = function(div)
+        {
+            if(div.target.id !== 'school')
+            {
+                document.getElementById("school").style.display = "inline";
+                document.getElementById("description_about3").style.display = "none";
+            }
+        };
     });
-    document.getElementById("trophy").addEventListener("click", (event) =>
+    document.getElementById("acheivements").addEventListener("click", (event) =>
     {
+        console.log("trophy clicked");
         document.getElementById("trophy").style.display = "none";
+        document.getElementById("description_about4").style.display = "inline";
+        document.onclick = function(div)
+        {
+            if(div.target.id !== 'trophy')
+            {
+                document.getElementById("trophy").style.display = "inline";
+                document.getElementById("description_about4").style.display = "none";
+            }
+        };
     });
 }
 else{
