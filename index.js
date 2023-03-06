@@ -65,66 +65,66 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
             document.getElementById("description_about4").style.display = "none";
         }
     }
-    //we hide the emoji on click
+    //we hide the emoji on click, remember not to worry clicking emoji may result in varying behaviour
     document.getElementById("hobbies").addEventListener("click", (event) =>
     {
         console.log("hobbies clicked");
         document.getElementById("chess-queen").style.display = "none";
         document.getElementById("description_about1").style.display = "inline";
-        document.onclick = function(div)
+        document.addEventListener("click", function(event)
         {
-            if(div.target.id !== 'hobbies')
+            if(event.target.id !== "hobbies")
             {
-                console.log("yup_unclick0");
+                console.log("closing hobbies");
                 document.getElementById("chess-queen").style.display = "inline";
                 document.getElementById("description_about1").style.display = "none";
             }
-        };
+        });
     });
     document.getElementById("favourites").addEventListener("click", (event) =>
     {
         console.log("heart clicked");
         document.getElementById("heart").style.display = "none";
         document.getElementById("description_about2").style.display = "inline";
-        document.onclick = function(div)
+        document.addEventListener("click", function(event)
         {
-            if(div.target.id !== 'favourites')
+            if(event.target.id !== "favourites")
             {
-                console.log("yup_unclick1");
+                console.log("closing favs");
                 document.getElementById("heart").style.display = "inline";
                 document.getElementById("description_about2").style.display = "none";
             }
-        };
+        });
     });
     document.getElementById("education").addEventListener("click", (event) =>
     {
         console.log("school clicked");
         document.getElementById("school").style.display = "none";
         document.getElementById("description_about3").style.display = "inline";
-        document.onclick = function(div)
+        document.addEventListener("click", function(event)
         {
-            if(div.target.id !== 'education')
+            if(event.target.id !== "education")
             {
-                console.log("yup_unclick2");
+                console.log("closing education");
                 document.getElementById("school").style.display = "inline";
                 document.getElementById("description_about3").style.display = "none";
             }
-        };
+        });
     });
     document.getElementById("acheivements").addEventListener("click", (event) =>
     {
         console.log("trophy clicked");
         document.getElementById("trophy").style.display = "none";
         document.getElementById("description_about4").style.display = "inline";
-        document.onclick = function(div)
+        document.addEventListener("click", function(event)
         {
-            if(div.target.id !== 'acheivements')
+            if(event.target.id !== "acheivements")
             {
-                console.log("yup_unclick3");
+                console.log("closing acheivements");
                 document.getElementById("trophy").style.display = "inline";
                 document.getElementById("description_about4").style.display = "none";
             }
-        };
+        });
     });
 }
 else{
