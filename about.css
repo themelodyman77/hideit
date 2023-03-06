@@ -171,6 +171,12 @@
     #description_about1 h2{
         margin-bottom: calc(2vh);
     }
+    #description_about1{
+        -ms-overflow-style : none;
+    }
+    #description_about1::-webkit-scrollbar{
+        display: none;
+    }
     #description_about2 li{
         text-align: left;
     }
@@ -181,14 +187,27 @@
         text-decoration: none;
         color: #000;
     }
+    #description_about2{
+        -ms-overflow-style : none;
+    }
+    #description_about2::-webkit-scrollbar{
+        display: none;
+    }
     #description_about3 li{
         text-align: left;
     }
     #description_about3 h2{
         margin-bottom: calc(2vh);
+        margin-top: calc(42vh);
     }
     #description_about3 a{
         text-decoration: none;
         color: #000;
+    }
+    #description_about3{
+        -ms-overflow-style : none;
+    }
+    #description_about3::-webkit-scrollbar{
+        display: none;
     }
 }

@@ -45,7 +45,7 @@ nav {
     align-items: center;
     padding: calc(2vh) calc(2vh);
     border-bottom: thin solid #c0c0c0;
-    animation: dragdown 1s ease;
+    animation: appearup 1s ease;
 }
 nav ul {
     display: flex;
@@ -159,12 +159,7 @@ nav ul li a {
         }
     }
 }
-.hide {
-    display: none;
-}
-@keyframes a {
-    
-}
+
 
 /* Social media section */
 .social-media {
@@ -173,6 +168,7 @@ nav ul li a {
     flex-direction: column;
     background-color: inherit;
     text-align: center;
+    animation: appearup 1s ease;
 }
 .icon{
     margin:10%;
@@ -192,15 +188,15 @@ nav ul li a {
 }
 @media (max-width: 1023px) {
     .social-media {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     .social-child{
         margin: calc(2vh);
@@ -212,9 +208,9 @@ nav ul li a {
 }
 @media (min-width: 1024px) {
     .social-media {
-    top: 50%;
-    right: 2%;
-    transform: translate(0, -50%);
+        top: 50%;
+        right: 2%;
+        transform: translate(0, -50%);
     }
     .social-child{
         margin: calc(2vh);
@@ -251,6 +247,7 @@ nav ul li a {
     overflow-wrap: break-word;
 }
 #info {
+    animation: appearup 1s ease;
     position: absolute;
     top: 50%;
     left: 2px;
@@ -316,6 +313,7 @@ nav ul li a {
 .name-block h2,h1{
     /* font-family: 'Shantell Sans', cursive; */
     font-family: 'Montserrat', sans-serif;
+    animation: appearup 1s ease;
     margin: 0;
 }
 
@@ -474,5 +472,14 @@ label{
     .copyright{
         display: none;
     }
-
+    
+}
+/* Common animation effect */
+@keyframes appearup {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
 }

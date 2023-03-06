@@ -12,6 +12,9 @@
     }
 }
 /* Laptop */
+.laptop{
+    animation: appearup 1s ease;
+}
 @media (min-width:1024px) {
     .laptop{
         position: absolute;
