@@ -75,6 +75,7 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         {
             if(div.target.id !== 'hobbies')
             {
+                console.log("yup_unclick0");
                 document.getElementById("chess-queen").style.display = "inline";
                 document.getElementById("description_about1").style.display = "none";
             }
@@ -87,8 +88,9 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         document.getElementById("description_about2").style.display = "inline";
         document.onclick = function(div)
         {
-            if(div.target.id !== 'heart')
+            if(div.target.id !== 'favourites')
             {
+                console.log("yup_unclick1");
                 document.getElementById("heart").style.display = "inline";
                 document.getElementById("description_about2").style.display = "none";
             }
@@ -101,8 +103,9 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         document.getElementById("description_about3").style.display = "inline";
         document.onclick = function(div)
         {
-            if(div.target.id !== 'school')
+            if(div.target.id !== 'education')
             {
+                console.log("yup_unclick2");
                 document.getElementById("school").style.display = "inline";
                 document.getElementById("description_about3").style.display = "none";
             }
@@ -115,8 +118,9 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         document.getElementById("description_about4").style.display = "inline";
         document.onclick = function(div)
         {
-            if(div.target.id !== 'trophy')
+            if(div.target.id !== 'acheivements')
             {
+                console.log("yup_unclick3");
                 document.getElementById("trophy").style.display = "inline";
                 document.getElementById("description_about4").style.display = "none";
             }
