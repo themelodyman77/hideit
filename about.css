@@ -198,7 +198,7 @@
     }
     #description_about3 h2{
         margin-bottom: calc(2vh);
-        margin-top: calc(50vw);
+        /* margin-top: calc(50vw); */
     }
     #description_about3 a{
         text-decoration: none;
@@ -206,6 +206,7 @@
     }
     #description_about3{
         -ms-overflow-style : none;
+        min-height: 100%;
     }
     #description_about3::-webkit-scrollbar{
         display: none;
