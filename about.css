@@ -103,6 +103,21 @@
         text-decoration: none;
         color: #000;
     }
+    #description_about4 ul li{
+        text-align: left!important;
+    }
+    #description_about4 h2{
+        margin-bottom: calc(2vh);
+    }
+    #description_about4 a{
+        color: black;
+    }
+    #description_about4{
+        -ms-overflow-style : none;
+    }
+    #description_about4::-webkit-scrollbar{
+        display: none;
+    }
 }
 @media (max-width:1023px) {
     #about{
@@ -164,6 +179,7 @@
     }
     #description_about1,#description_about2,#description_about3,#description_about4{
         padding: 4%;
+        font-size: calc(3vw);
     }
     #description_about1 li{
         text-align: left;
@@ -211,4 +227,24 @@
     #description_about3::-webkit-scrollbar{
         display: none;
     }
+    #description_about4 ul li{
+        text-align: left!important;
+    }
+    #description_about4 h2{
+        margin-bottom: calc(2vh);
+    }
+    #description_about4 a{
+        color: black;
+    }
+    #description_about4{
+        -ms-overflow-style : none;
+        min-height: 100%;
+    }
+    #description_about4::-webkit-scrollbar{
+        display: none;
+    }
+}
+#hobbies,#favourites,#education,#acheivements
+{
+    animation: appearup 1s linear;
 }

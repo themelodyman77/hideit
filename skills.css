@@ -74,13 +74,5 @@
     box-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
 }
 .skills-container{
-    animation : slideright 1s ease-in-out;
-}
-@keyframes slideright {
-    0%{
-        transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(0%);
-    }
+    animation : appearup 1s ease-in-out;
 }

@@ -47,7 +47,7 @@
         text-align: center;
         border-radius: 2rem;
         border-top: thin solid #c0c0c0;
-        /* border-left: thin solid #c0c0c0; */
+        min-height: 100%;
     }
     .welcome-txt{
         margin: calc(2vh);
@@ -56,6 +56,49 @@
     #namasthe{
         font-size: 3em!important;
     }     
+}
+.welcome{
+    overflow: auto;
+}
+.welcome-txt{
+    overflow: hidden;
+    text-align: center;
+    animation: scroll 60s linear infinite;
+}
+@keyframes scroll {
+    0%{
+        transform: translateY(0%);
+    }
+    13%{
+        transform: translateY(-10%);
+    }
+    20%{
+        transform: translateY(-20%);
+    }
+    30%{
+        transform: translateY(-30%);
+    }
+    40%{
+        transform: translateY(-40%);
+    }
+    50%{
+        transform: translateY(-50%);
+    }
+    60%{
+        transform: translateY(-60%);
+    }
+    70%{
+        transform: translateY(-70%);
+    }
+    80%{
+        transform: translateY(-80%);
+    }
+    90%{
+        transform: translateY(-90%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
 }
 .welcome{
     -ms-overflow-style : none;
