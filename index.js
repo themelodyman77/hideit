@@ -66,66 +66,69 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         }
     }
     //we hide the emoji on click, remember not to worry clicking emoji may result in varying behaviour
-    document.getElementById("hobbies").addEventListener("click", (event) =>
+    if(window.location.pathname === "/about")
     {
-        console.log("hobbies clicked");
-        document.getElementById("chess-queen").style.display = "none";
-        document.getElementById("description_about1").style.display = "inline";
-        document.addEventListener("click", function(event)
+        document.getElementById("hobbies").addEventListener("click", (event) =>
         {
-            if(event.target.id !== "hobbies")
+            console.log("hobbies clicked");
+            document.getElementById("chess-queen").style.display = "none";
+            document.getElementById("description_about1").style.display = "inline";
+            document.addEventListener("click", function(event)
             {
-                console.log("closing hobbies");
-                document.getElementById("chess-queen").style.display = "inline";
-                document.getElementById("description_about1").style.display = "none";
-            }
+                if(event.target.id !== "hobbies")
+                {
+                    console.log("closing hobbies");
+                    document.getElementById("chess-queen").style.display = "inline";
+                    document.getElementById("description_about1").style.display = "none";
+                }
+            });
         });
-    });
-    document.getElementById("favourites").addEventListener("click", (event) =>
-    {
-        console.log("heart clicked");
-        document.getElementById("heart").style.display = "none";
-        document.getElementById("description_about2").style.display = "inline";
-        document.addEventListener("click", function(event)
+        document.getElementById("favourites").addEventListener("click", (event) =>
         {
-            if(event.target.id !== "favourites")
+            console.log("heart clicked");
+            document.getElementById("heart").style.display = "none";
+            document.getElementById("description_about2").style.display = "inline";
+            document.addEventListener("click", function(event)
             {
-                console.log("closing favs");
-                document.getElementById("heart").style.display = "inline";
-                document.getElementById("description_about2").style.display = "none";
-            }
+                if(event.target.id !== "favourites")
+                {
+                    console.log("closing favs");
+                    document.getElementById("heart").style.display = "inline";
+                    document.getElementById("description_about2").style.display = "none";
+                }
+            });
         });
-    });
-    document.getElementById("education").addEventListener("click", (event) =>
-    {
-        console.log("school clicked");
-        document.getElementById("school").style.display = "none";
-        document.getElementById("description_about3").style.display = "inline";
-        document.addEventListener("click", function(event)
+        document.getElementById("education").addEventListener("click", (event) =>
         {
-            if(event.target.id !== "education")
+            console.log("school clicked");
+            document.getElementById("school").style.display = "none";
+            document.getElementById("description_about3").style.display = "inline";
+            document.addEventListener("click", function(event)
             {
-                console.log("closing education");
-                document.getElementById("school").style.display = "inline";
-                document.getElementById("description_about3").style.display = "none";
-            }
+                if(event.target.id !== "education")
+                {
+                    console.log("closing education");
+                    document.getElementById("school").style.display = "inline";
+                    document.getElementById("description_about3").style.display = "none";
+                }
+            });
         });
-    });
-    document.getElementById("acheivements").addEventListener("click", (event) =>
-    {
-        console.log("trophy clicked");
-        document.getElementById("trophy").style.display = "none";
-        document.getElementById("description_about4").style.display = "inline";
-        document.addEventListener("click", function(event)
+        document.getElementById("acheivements").addEventListener("click", (event) =>
         {
-            if(event.target.id !== "acheivements")
+            console.log("trophy clicked");
+            document.getElementById("trophy").style.display = "none";
+            document.getElementById("description_about4").style.display = "inline";
+            document.addEventListener("click", function(event)
             {
-                console.log("closing acheivements");
-                document.getElementById("trophy").style.display = "inline";
-                document.getElementById("description_about4").style.display = "none";
-            }
+                if(event.target.id !== "acheivements")
+                {
+                    console.log("closing acheivements");
+                    document.getElementById("trophy").style.display = "inline";
+                    document.getElementById("description_about4").style.display = "none";
+                }
+            });
         });
-    });
+    }
 }
 else{
     // Aside button

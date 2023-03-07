@@ -101,7 +101,6 @@ nav ul li a {
     .btn-line {
         width: 100%;
         height: calc(0.4vh);
-        background-color: #E90064;
         border-radius: 2px;
         transition: all 0.3s ease;
     }
@@ -141,9 +140,6 @@ nav ul li a {
         display: inline;
         padding: calc(2vh);
     }
-    .nav-elements-mini{
-        color: #E90064;
-    }
     #mini-nav.show {
         transform: translateX(0);
     }
@@ -172,7 +168,6 @@ nav ul li a {
 }
 .icon{
     margin:10%;
-    color: #B3005E;
 }
 .fa-square-instagram{
     color: #c0c0c0;
@@ -419,6 +414,7 @@ label{
     display: none;
     height: fit-content;
     width: fit-content;
+    color: red;
 }
 .feedback-form{
     display: flex;
