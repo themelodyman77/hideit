@@ -140,6 +140,9 @@ nav ul li a {
         display: inline;
         padding: calc(2vh);
     }
+    .nav-elements-mini{
+        text-decoration: none;
+    }
     #mini-nav.show {
         transform: translateX(0);
     }

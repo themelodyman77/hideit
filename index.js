@@ -1,6 +1,7 @@
 var vp_check_mobile = window.matchMedia("(max-width:1023px)");
 if(vp_check_mobile.matches)     // checks for mobile viewport
 {
+    console.log("Entered mobile viewport");
     // Navbar for mobiles
     const navbar = document.querySelector('.navbar');
     const menuBtn = document.querySelector('.menu-btn');
@@ -10,11 +11,13 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
     });
     function mini_nav_closer()
     {
+        console.log("closed the navbar");
         miniNav.style.display = 'none';
         document.getElementById("mini-nav").style.transform = "translateY(0)";
     }
     function mini_nav_opener()
     {
+        console.log("Opened the navbar");
         if (miniNav.style.display === 'flex') {
         document.getElementById("mini-nav").style.transform = "translateY(-100%)";
         document.getElementById("mini-nav").style.transition = "ease 0.8s";
@@ -26,11 +29,13 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         miniNav.style.display = 'flex';
         }
     }
+    // Clicking menuBtn
     menuBtn.addEventListener('click', mini_nav_opener);  
 
     // Feedback function mobile
     document.getElementById("feedback-click1").addEventListener("click", function()
     {
+        console.log("Feedback clicked");
         document.getElementById("feedback-click1").style.display = "none";
         navbar.classList.toggle('active');
         mini_nav_closer();
@@ -38,6 +43,7 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         document.getElementById("close_btn_feedback").style.display = "block";
         document.getElementById("close_btn_feedback").addEventListener("click",function()
         {
+            console.log("Feedback closed");
             console.log("inside");
             document.getElementById("feedback-click1").style.display = "inline";
             document.getElementById("inp-form").style.transform = "translateX(-500px)";
@@ -54,11 +60,10 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
     // About for mobiles
     for(var i=0;i<document.getElementsByClassName("ab-child").length;i++)
     {
-        console.log("IM in1");
         var temp = document.getElementsByClassName("ab-child")[i];
         if(temp.classList[0] == "initial")
         {
-            console.log("IM in");
+            console.log("Initial display of about box;s txt set none");
             document.getElementById("description_about1").style.display = "none";
             document.getElementById("description_about2").style.display = "none";
             document.getElementById("description_about3").style.display = "none";
@@ -66,8 +71,9 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         }
     }
     //we hide the emoji on click, remember not to worry clicking emoji may result in varying behaviour
-    if(window.location.pathname === "/about")
+    if(window.location.pathname === "/about.html")
     {
+        console.log("In about page");
         document.getElementById("hobbies").addEventListener("click", (event) =>
         {
             console.log("hobbies clicked");
@@ -85,7 +91,7 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         });
         document.getElementById("favourites").addEventListener("click", (event) =>
         {
-            console.log("heart clicked");
+            console.log("Favs clicked");
             document.getElementById("heart").style.display = "none";
             document.getElementById("description_about2").style.display = "inline";
             document.addEventListener("click", function(event)
@@ -100,7 +106,7 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         });
         document.getElementById("education").addEventListener("click", (event) =>
         {
-            console.log("school clicked");
+            console.log("Education clicked");
             document.getElementById("school").style.display = "none";
             document.getElementById("description_about3").style.display = "inline";
             document.addEventListener("click", function(event)
@@ -115,7 +121,7 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         });
         document.getElementById("acheivements").addEventListener("click", (event) =>
         {
-            console.log("trophy clicked");
+            console.log("Acheivements clicked");
             document.getElementById("trophy").style.display = "none";
             document.getElementById("description_about4").style.display = "inline";
             document.addEventListener("click", function(event)
@@ -177,44 +183,47 @@ else{
             document.getElementById("description_about4").style.display = "none";
         }
     }
-    document.getElementById("hobbies").addEventListener("mouseover", (event) =>
+    if(window.location.pathname === "/about.html")
     {
-        var temp_text = "description_about1";
-        document.getElementById(temp_text).style.display = "inline";
-    });
-    document.getElementById("hobbies").addEventListener("mouseleave", (event) =>
-    {
-        var temp_text = "description_about1";
-        document.getElementById(temp_text).style.display = "none";
-    });
-    document.getElementById("favourites").addEventListener("mouseover", (event) =>
-    {
-        var temp_text = "description_about2";
-        document.getElementById(temp_text).style.display = "inline";
-    });
-    document.getElementById("favourites").addEventListener("mouseleave", (event) =>
-    {
-        var temp_text = "description_about2";
-        document.getElementById(temp_text).style.display = "none";
-    });
-    document.getElementById("education").addEventListener("mouseover", (event) =>
-    {
-        var temp_text = "description_about3";
-        document.getElementById(temp_text).style.display = "inline";
-    });
-    document.getElementById("education").addEventListener("mouseleave", (event) =>
-    {
-        var temp_text = "description_about3";
-        document.getElementById(temp_text).style.display = "none";
-    });
-    document.getElementById("acheivements").addEventListener("mouseover", (event) =>
-    {
-        var temp_text = "description_about4";
-        document.getElementById(temp_text).style.display = "inline";
-    });
-    document.getElementById("acheivements").addEventListener("mouseleave", (event) =>
-    {
-        var temp_text = "description_about4";
-        document.getElementById(temp_text).style.display = "none";
-    });
+        document.getElementById("hobbies").addEventListener("mouseover", (event) =>
+        {
+            var temp_text = "description_about1";
+            document.getElementById(temp_text).style.display = "inline";
+        });
+        document.getElementById("hobbies").addEventListener("mouseleave", (event) =>
+        {
+            var temp_text = "description_about1";
+            document.getElementById(temp_text).style.display = "none";
+        });
+        document.getElementById("favourites").addEventListener("mouseover", (event) =>
+        {
+            var temp_text = "description_about2";
+            document.getElementById(temp_text).style.display = "inline";
+        });
+        document.getElementById("favourites").addEventListener("mouseleave", (event) =>
+        {
+            var temp_text = "description_about2";
+            document.getElementById(temp_text).style.display = "none";
+        });
+        document.getElementById("education").addEventListener("mouseover", (event) =>
+        {
+            var temp_text = "description_about3";
+            document.getElementById(temp_text).style.display = "inline";
+        });
+        document.getElementById("education").addEventListener("mouseleave", (event) =>
+        {
+            var temp_text = "description_about3";
+            document.getElementById(temp_text).style.display = "none";
+        });
+        document.getElementById("acheivements").addEventListener("mouseover", (event) =>
+        {
+            var temp_text = "description_about4";
+            document.getElementById(temp_text).style.display = "inline";
+        });
+        document.getElementById("acheivements").addEventListener("mouseleave", (event) =>
+        {
+            var temp_text = "description_about4";
+            document.getElementById(temp_text).style.display = "none";
+        });
+    }
 }
