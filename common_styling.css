@@ -1,6 +1,9 @@
 /* Importing font styles */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap');
 /* Targeting full body */
+*{
+    transition: 0.3s linear;
+}
 body {
     background-color: #1a1a1a;
     font-family: 'Open Sans', sans-serif;
@@ -235,78 +238,6 @@ nav ul li a {
     }
 }
 
-/* Aside button */
-#circle {
-    background-color: #fff;
-    color: #fff;
-    text-align: center;
-    z-index: 2;
-    display: none;
-    overflow-wrap: break-word;
-}
-#info {
-    animation: appearup 1s ease;
-    position: absolute;
-    top: 50%;
-    left: 2px;
-    background-color: #333;
-    color: #fff;
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    z-index: 2;
-    opacity: 30%;
-}
-#info:hover{
-    opacity: 90%;
-}
-.aside{
-    z-index: 500;
-    transform: rotate(270deg);
-    position: relative;
-    top: 50%;
-    display: inline;
-    text-align: center;
-    white-space: pre-wrap;
-    color: black;
-    font-size: 1rem;
-}
-@media (max-width:1023px)
-{
-    #circle {
-        width: 200px;
-        height: 100px;
-        left: -66px;
-        border-radius: 12rem 12rem 0 0;
-        transform: rotate(90deg);
-        position: absolute;
-        top: 50%;
-        display: none!important;
-    }
-    .aside{
-        display: none!important;
-    }
-    #info{
-        display: none!important;
-    }
-}
-@media (min-width:1024px)
-{
-    #circle{
-        position: absolute;
-        bottom: 35%;
-        left: -100px;
-        width: 300px;
-        height: 150px;
-        border-radius: 12rem 12rem 0 0;
-        transform: rotate(90deg);
-    }
-}
-
-
 /* Name block */
 .name-block h2,h1{
     /* font-family: 'Shantell Sans', cursive; */
@@ -516,12 +447,57 @@ label{
         transform: scale(0.9);
         transition: 0.2s linear;
     }
-    #toggler.light #toggle_btn{
+    #bdy.light #toggle_btn{
         top: 20px;
         transition: 0.2s linear;
         background-color: white;
+    }   
+}
+@media (max-width:1023px) {
+    #toggle_container{
+        display: none;
     }
-    #toggler.light{
-        background-color: black;
-    }
+}
+
+/* Light theme */
+#bdy.light #toggler{
+    background-color: black!important;
+    transition: 0.3s linear;
+}
+#bdy.light{
+    background-color: #fff!important;
+    color: #000!important;
+    transition: 0.3s linear;
+}
+#bdy.light nav{
+    background-color: #c0c0c0;
+    transition: 0.3s linear;
+}
+#bdy.light nav ul li a{
+    color: #000;
+    transition: 0.3s linear;
+    font-weight: bold;
+}
+#bdy.light .fa-square-instagram
+{
+    color: #000;
+    transition: 0.3s linear;
+}
+#bdy.light .fa-linkedin
+{
+    color: #000;
+    transition: 0.3s linear;
+}
+#bdy.light .fa-github
+{
+    color: #000;
+    transition: 0.3s linear;
+}
+#bdy.light .fa-envelope
+{
+    color: #000;
+    transition: 0.3s linear;
+}
+#bdy.light .chat-btn-fa{
+    color: black;
 }

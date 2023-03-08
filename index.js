@@ -219,6 +219,6 @@ else{
     // Light mode and Dark mode
     document.getElementById("toggle_btn").addEventListener("click", function ()
     {
-        document.getElementById("toggler").classList.toggle("light");
+        document.getElementById("bdy").classList.toggle("light");
     });
 }

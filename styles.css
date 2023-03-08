@@ -1,6 +1,7 @@
 @import "common_styling.css";
 
 /* Current page */
+
 .home{
     color: #ffa116!important;
     text-decoration: underline;
@@ -36,6 +37,12 @@
         right: calc(-38vw);
     }
     #lap-img{
+        width: calc(30vw + 10vh);
+        position: relative;
+        top: calc(7vh);
+    }
+    #lap-light-img{
+        display: none;
         width: calc(30vw + 10vh);
         position: relative;
         top: calc(7vh);
@@ -125,6 +132,12 @@
     #lap-img{
         width: calc(30vw + 10vh);
     }
+    #lap-light-img{
+        display: none;
+        width: calc(30vw + 10vh);
+        position: relative;
+        top: calc(7vh);
+    }
     .main-lap{
         display: flex;
         align-items: center;
@@ -142,4 +155,25 @@
     .welcome-txt{
         margin: calc(2vh);
     }
+}
+
+/* light mode */
+#bdy.light .welcome{
+    border-top: thin solid #000;
+    transition: 0.3s linear;
+}
+#bdy.light .home{
+    text-decoration: underline;
+    transition: 0.3s linear;
+}
+#bdy.light #lap-img{
+    display: none;
+    transition: 0.3s linear;
+}
+#bdy.light #lap-light-img{
+    display: inline;
+    transition: 0.3s linear;
+}
+#bdy.light .home{
+    color: black!important;
 }
