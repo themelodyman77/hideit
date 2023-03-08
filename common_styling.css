@@ -14,13 +14,18 @@ body {
     color: #fff;
     box-sizing: border-box;
 }
-/* portfolio text */
+/* portfolio logo */
 #portfolio{
     font-family: 'Sacramento', cursive;
     width: calc(10vw);
     z-index: 1;
 }
-
+#portfolio-light{
+    font-family: 'Sacramento', cursive;
+    width: calc(10vw);
+    z-index: 1;
+    display: none;
+}
 /* nav elements */
 .nav-elements {
     display: inline-block;
@@ -500,4 +505,10 @@ label{
 }
 #bdy.light .chat-btn-fa{
     color: black;
+}
+#bdy.light #portfolio-light{
+    display: inline;
+}
+#bdy.light #portfolio{
+    display: none;
 }
