@@ -71,7 +71,7 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         }
     }
     //we hide the emoji on click, remember not to worry clicking emoji may result in varying behaviour
-    if(window.location.pathname === "/hideit/about.html")
+    if(window.location.pathname === "/about.html")
     {
         console.log("In about page");
         document.getElementById("hobbies").addEventListener("click", (event) =>
@@ -137,17 +137,6 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
     }
 }
 else{
-    // Aside button
-    function openpg()
-    {
-        document.getElementById("circle").style.display = "inline-block";
-        document.getElementById("info").style.display = "none";
-    }
-    function closepg() {
-        document.getElementById("circle").style.display = "none";
-        document.getElementById("info").style.display = "inline";
-    }
-
     // Feedback function computer
     document.getElementById("feedback-click").addEventListener("click", function()
     {
@@ -183,7 +172,7 @@ else{
             document.getElementById("description_about4").style.display = "none";
         }
     }
-    if(window.location.pathname === "/hideit/about.html")
+    if(window.location.pathname === "/about.html")
     {
         document.getElementById("hobbies").addEventListener("mouseover", (event) =>
         {
@@ -226,4 +215,10 @@ else{
             document.getElementById(temp_text).style.display = "none";
         });
     }
+
+    // Light mode and Dark mode
+    document.getElementById("toggle_btn").addEventListener("click", function ()
+    {
+        document.getElementById("toggler").classList.toggle("light");
+    });
 }

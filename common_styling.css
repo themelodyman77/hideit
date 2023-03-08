@@ -482,3 +482,46 @@ label{
         opacity: 100%;
     }
 }
+
+/* Toggle */
+@media (min-width:1024px) {
+    #toggle_container{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: fit-content;
+        height: fit-content;
+    }
+    #toggler{
+        position: relative;
+        background-color: #c0c0c0;
+        width: 20px;
+        height: 40px;
+        border-radius: 20px;
+        z-index: 4;
+        display: flex;
+        align-items: center;
+        animation: appearup 1s ease;
+    }
+    #toggle_btn{
+        z-index: 5;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(255,161,22);
+        top: 0;
+        border-radius: 50%;
+        transform: scale(0.9);
+        transition: 0.2s linear;
+    }
+    #toggler.light #toggle_btn{
+        top: 20px;
+        transition: 0.2s linear;
+        background-color: white;
+    }
+    #toggler.light{
+        background-color: black;
+    }
+}
