@@ -570,6 +570,11 @@ label{
     border: thick solid black;
     background-color: white;
 }
+@media (max-width:1023px) {
+    #bdy.light .nav-elements-mini{
+        color: #000!important;
+    }
+}
 
 /* Loader */
 #loader_div{
