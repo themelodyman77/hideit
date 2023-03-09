@@ -71,7 +71,7 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         }
     }
     //we hide the emoji on click, remember not to worry clicking emoji may result in varying behaviour
-    if(window.location.pathname === "/hideit/about.html")
+    if(window.location.pathname === "/about.html")
     {
         console.log("In about page");
         document.getElementById("hobbies").addEventListener("click", (event) =>
@@ -139,7 +139,23 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
     document.getElementById("toggle_btn").addEventListener("click", function ()
     {
         document.getElementById("bdy").classList.toggle("light");
+        if(document.getElementById("bdy").classList.contains("light"))
+        {
+            localStorage.setItem("classValue","light");
+        }
+        else{
+            localStorage.removeItem("classValue","light");
+        }
     });
+    function initialiser_theme()
+    {
+        const classValue = localStorage.getItem("classValue");
+        if(classValue === "light")
+        {
+            const container= document.getElementById("bdy");
+            container.classList.add(classValue);
+        }
+    }
 }
 else{
     // Feedback function computer
@@ -177,7 +193,7 @@ else{
             document.getElementById("description_about4").style.display = "none";
         }
     }
-    if(window.location.pathname === "/hideit/about.html")
+    if(window.location.pathname === "/about.html")
     {
         document.getElementById("hobbies").addEventListener("mouseover", (event) =>
         {
@@ -225,5 +241,21 @@ else{
     document.getElementById("toggle_btn").addEventListener("click", function ()
     {
         document.getElementById("bdy").classList.toggle("light");
+        if(document.getElementById("bdy").classList.contains("light"))
+        {
+            localStorage.setItem("classValue","light");
+        }
+        else{
+            localStorage.removeItem("classValue","light");
+        }
     });
+    function initialiser_theme()
+    {
+        const classValue = localStorage.getItem("classValue");
+        if(classValue === "light")
+        {
+            const container= document.getElementById("bdy");
+            container.classList.add(classValue);
+        }
+    }
 }
