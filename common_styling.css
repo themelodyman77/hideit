@@ -330,7 +330,7 @@ nav ul li a {
     height: fit-content;
 }
 label{
-    padding-right: calc(2vh);
+    padding-right: calc(1vh);
 }
 .submit-btn{
     position: relative;
@@ -349,7 +349,7 @@ label{
 }
 #close_btn_feedback{
     position: absolute;
-    right: calc(3vh);
+    right: calc(3vh)!important;
     display: none;
     height: fit-content;
     width: fit-content;
@@ -366,13 +366,20 @@ label{
         height: fit-content;
         width: fit-content;
         position: absolute;
-        left: calc(4vw);
-        right: calc(4vw);
+        left: calc(5vw);
+        right: calc(5vw);
         bottom: calc(8vh);
         border: thick solid #fff;
         z-index: 2;
         background-color: #000;
         border-radius: 2em;
+    }
+}
+@media (min-width:1024px) {
+    .form{
+        left: calc(2vw);
+        right: calc(70vw);
+        bottom: calc(1vh);
     }
 }
 .form{
@@ -558,4 +565,8 @@ label{
     #bdy.light .nav-elements-mini{
         columns: black;
     }
+}
+#bdy.light .form{
+    border: thick solid black;
+    background-color: white;
 }

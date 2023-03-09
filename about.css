@@ -269,3 +269,6 @@
 #bdy.light #description_about4{
     color: white;
 }
+#bdy.light .about-nav{
+    color: black!important;
+}

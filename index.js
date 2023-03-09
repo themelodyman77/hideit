@@ -163,7 +163,7 @@ else{
     {
         document.getElementById("feedback-click").style.display = "none";
         document.getElementById("inp-form").style.display = "inline";
-        document.getElementById("close_btn_feedback").style.display = "block";
+        document.getElementById("close_btn_feedback").style.display = "inline";
         document.getElementById("close_btn_feedback").addEventListener("click",function()
         {
             console.log("inside");

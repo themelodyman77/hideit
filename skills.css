@@ -6,7 +6,6 @@
 }
 @media (max-width:1023px)
 {
-
     .skills-nav{
         color: #ffa116!important;
     }
@@ -74,7 +73,7 @@
     box-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
 }
 .skills-container{
-    animation : appearup 0.3s ease-in-out;
+    animation : appearup 0.3s linear;
 }
 
 /* Light mode */
@@ -86,4 +85,7 @@
 }
 #bdy.light .skill-tab:hover{
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+#bdy.light .skill-tab{
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.8);
 }

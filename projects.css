@@ -90,3 +90,6 @@
     background-color: black;
     color: white;
 }
+#bdy.light .projects-nav{
+    color: black!important;
+}
