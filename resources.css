@@ -1,50 +1,16 @@
 @import "common_styling.css";
-.resources_container{
-    display: flex;
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-basis: 50%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: #2dba5d;
-    margin: auto;
+
+.resources-nav{
+    color: #ffa116!important;
 }
-.resource-child{
-    width: fit-content;
-    height: 4em;  /*check it */
-    background-color: #000;
-    border: thick solid #ffa116;
-    border-radius: 2rem;
-    transition: height 1s;
-    overflow: hidden;
-    line-break: strict;
-    text-align: center;
+@media (max-width:1023px)
+{
+    .resources-nav{
+        color: #ffa116!important;
+    }
 }
-.resource_title{    
-    margin-bottom: 0;
-    font-size: 2em;
-    padding: 5px 5px 5px 5px;
-}
-.resource-child:hover{
-    height: 8em;
-}
-.tech:hover{
-    height: 21em;
-}
-.resource_links{
-    overflow-y: auto;
-    padding: 5px;
-}
-.resource-child{
-    animation: fadein 2s ease;
-}
-@keyframes fadein {
-    0%{opacity: 0%;}
-    100%{opacity: 100%;}
+#bdy.light .resources-nav{
+    text-decoration: underline;
+    transition: 0.3s linear;
+    color: black!important;
 }

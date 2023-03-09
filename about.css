@@ -1,5 +1,6 @@
 @import "common_styling.css";
 /* to the current page */
+
 .about-nav{
     color: #ffa116!important;
     text-decoration: underline;
@@ -271,4 +272,12 @@
 }
 #bdy.light .about-nav{
     color: black!important;
+}
+
+@media (min-width:1023px) {
+    #close_btn_feedback{
+        position: absolute;
+        top: calc(2vw)!important;
+        right: calc(2vw);
+    }
 }
