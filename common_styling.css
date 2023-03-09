@@ -570,3 +570,91 @@ label{
     border: thick solid black;
     background-color: white;
 }
+
+/* Loader */
+#loader_div{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    z-index: 99999999999999!important;
+    position: absolute;
+}
+#load{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#load :nth-child(1)
+{
+    background-color: #dd6e12;
+    height: calc(5vw);
+    width: calc(5vw);
+    border-radius: calc(5vw);
+    animation: bounce1 1s ease infinite;
+}
+@keyframes bounce1 {
+    0%{
+        transform: translateY(70px);
+    }
+    33%{
+        transform: translateY(-70px);
+    }
+    66%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(70px);
+    }
+}
+#load :nth-child(2)
+{
+    background-color: #fff;
+    height: calc(5vw);
+    width: calc(5vw);
+    border-radius: calc(5vw);
+    animation: bounce2 1s ease infinite;
+}
+@keyframes bounce2 {
+    0%{
+        transform: translateY(0px);
+    }
+    33%{
+        transform: translateY(70px);
+    }
+    66%{
+        transform: translateY(-70px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+#load :nth-child(3)
+{
+    background-color: rgb(9, 213, 9);
+    height: calc(5vw);
+    width: calc(5vw);
+    border-radius: calc(5vw);
+    animation: bounce3 1s ease infinite;
+}
+@keyframes bounce3 {
+    0%{
+        transform: translateY(-70px);
+    }
+    33%{
+        transform: translateY(0px);
+    }
+    66%{
+        transform: translateY(70px);
+    }
+    100%{
+        transform: translateY(-70px);
+    }
+}
