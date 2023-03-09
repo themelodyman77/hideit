@@ -14,7 +14,7 @@
 }
 /* Laptop */
 .laptop{
-    animation: appearup 1s ease;
+    animation: appearup 0.3s ease;
 }
 @media (min-width:1024px) {
     .laptop{
@@ -176,4 +176,12 @@
 }
 #bdy.light .home{
     color: black!important;
+}
+@media (max-width:1023px) {
+    #bdy.light #lap-light-img{
+        z-index: 0;
+    }
+    #bdy.light .welcome{
+        z-index: 1;
+    }
 }

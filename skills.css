@@ -74,5 +74,16 @@
     box-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
 }
 .skills-container{
-    animation : appearup 1s ease-in-out;
+    animation : appearup 0.3s ease-in-out;
+}
+
+/* Light mode */
+#bdy.light .skills-nav{
+    color: black!important;
+}
+#bdy.light .skills-container{
+    background-color: white;
+}
+#bdy.light .skill-tab:hover{
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }

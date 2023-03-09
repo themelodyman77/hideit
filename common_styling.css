@@ -53,7 +53,7 @@ nav {
     align-items: center;
     padding: calc(2vh) calc(2vh);
     border-bottom: thin solid #c0c0c0;
-    animation: appearup 1s ease;
+    animation: appearup 0.3s ease;
 }
 nav ul {
     display: flex;
@@ -155,7 +155,7 @@ nav ul li a {
         transform: translateX(0);
     }
     #mini-nav{
-        animation: appear_down 0.8s ease;
+        animation: appear_down 0.3s ease;
     }
     @keyframes appear_down {
         0%{
@@ -175,7 +175,7 @@ nav ul li a {
     flex-direction: column;
     background-color: inherit;
     text-align: center;
-    animation: appearup 1s ease;
+    /* animation: appearup 0.3s ease; */
 }
 .icon{
     margin:10%;
@@ -225,7 +225,7 @@ nav ul li a {
         font-size: calc(3em);
     }
     .social-child:hover{
-        animation: shake 0.5s;
+        animation: shake 0.3s;
         animation-iteration-count:infinite;
     }
     @keyframes shake {
@@ -247,7 +247,7 @@ nav ul li a {
 .name-block h2,h1{
     /* font-family: 'Shantell Sans', cursive; */
     font-family: 'Montserrat', sans-serif;
-    animation: appearup 1s ease;
+    animation: appearup 0.3s ease;
     margin: 0;
 }
 
@@ -262,7 +262,7 @@ nav ul li a {
     height: fit-content;
 }
 .containes-chat-box:hover{
-    animation : jump 1s ease;
+    animation : jump 0.3s ease;
 }
 @media (max-width:1023px)
 {
@@ -297,7 +297,7 @@ nav ul li a {
 }
 
 .chat-box{
-    animation : appear 0.5s ease;
+    animation : appear 0.3s ease;
 }
 @keyframes appear {
     0%{
@@ -376,14 +376,14 @@ label{
     }
 }
 .form{
-    animation: pop 0.8s ease-out;
+    animation: pop 0.3s ease-out;
 }
 @keyframes pop {
     0%{transform: translateX(-500px);}
     100%{transform: translateX(0px);}
 }
 #close_btn_feedback:hover{
-    animation: scaleup 0.5s ease infinite;
+    animation: scaleup 0.3s ease infinite;
 }
 @keyframes scaleup {
     0%{transform: scale(1);}
@@ -450,18 +450,51 @@ label{
         top: 0;
         border-radius: 50%;
         transform: scale(0.9);
-        transition: 0.2s linear;
+        transition: 0.3s linear;
     }
     #bdy.light #toggle_btn{
         top: 20px;
-        transition: 0.2s linear;
+        transition: 0.3s linear;
         background-color: white;
     }   
 }
 @media (max-width:1023px) {
     #toggle_container{
-        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: fit-content;
+        height: fit-content;
     }
+    #toggler{
+        position: relative;
+        background-color: #c0c0c0;
+        width: 20px;
+        height: 40px;
+        border-radius: 20px;
+        z-index: 4;
+        display: flex;
+        align-items: center;
+        animation: appearup 1s ease;
+    }
+    #toggle_btn{
+        z-index: 5;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(255,161,22);
+        top: 0;
+        border-radius: 50%;
+        transform: scale(0.9);
+        transition: 0.3s linear;
+    }
+    #bdy.light #toggle_btn{
+        top: 20px;
+        transition: 0.3s linear;
+        background-color: white;
+    }   
 }
 
 /* Light theme */
@@ -511,4 +544,18 @@ label{
 }
 #bdy.light #portfolio{
     display: none;
+}
+#bdy.light nav{
+    border-bottom: thin solid black;
+}
+@media (max-width:1023px) {
+    #bdy.light #portfolio-light{
+        width: calc(30vw);
+    }
+    #bdy.light #mini-nav{
+        background-color: white;
+    }
+    #bdy.light .nav-elements-mini{
+        columns: black;
+    }
 }

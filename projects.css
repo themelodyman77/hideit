@@ -69,7 +69,7 @@
     }
 }
 .projects-container{
-    animation : popup 1s ease-in-out;
+    animation : popup 0.3s ease-in-out;
 }
 @keyframes slideright {
     0%{
@@ -81,4 +81,12 @@
     100%{
         opacity: 100%;
     }
+}
+#bdy.light .carousel-control-next-icon{
+    background-color: black;
+    color: white;
+}
+#bdy.light .carousel-control-prev-icon{
+    background-color: black;
+    color: white;
 }

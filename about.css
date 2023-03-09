@@ -246,5 +246,26 @@
 }
 #hobbies,#favourites,#education,#acheivements
 {
-    animation: appearup 1s linear;
+    animation: appearup 0.3s linear;
+}
+#bdy.light .initial{
+    background-color: black;
+}
+#bdy.light .fa-chess-queen{
+    color: white;
+}
+#bdy.light a{
+    color: white;
+}
+#bdy.light #description_about1{
+    color: white;
+}
+#bdy.light #description_about2{
+    color: white;
+}
+#bdy.light #description_about3{
+    color: white;
+}
+#bdy.light #description_about4{
+    color: white;
 }
