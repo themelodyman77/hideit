@@ -167,6 +167,7 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         {
             const container= document.getElementById("bdy");
             container.classList.add(classValue);
+            console.log(classValue);
         }
     }
 }
@@ -276,6 +277,7 @@ else{
         {
             const container= document.getElementById("bdy");
             container.classList.add(classValue);
+            console.log(classValue);
         }
     }
 }
@@ -283,7 +285,9 @@ else{
 
 // Loader
 var loader = document.getElementById("loader_div");
+console.log("Pre loader started");
 window.addEventListener("load", function ()
 {
+    console.log("pre loader closed");
     loader.style.display = "none";
 });
