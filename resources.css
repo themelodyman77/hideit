@@ -88,20 +88,20 @@
     }
     #res1{
         background-color: #fff;
-        width: calc(40vw);
+        width: calc(60vw);
         height: calc(20vh);
         border-radius: calc(4vw);
         position: relative;
     }
     #res2{
         background-color: #fff;
-        width: calc(40vw);
+        width: calc(60vw);
         height: calc(20vh);
         border-radius: calc(4vw);
     }
     #res3{
         background-color: #fff;
-        width: calc(40vw);
+        width: calc(60vw);
         height: calc(20vh);
         border-radius: calc(4vw);
     }
