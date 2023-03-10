@@ -27,7 +27,7 @@
         align-items: center;
         justify-content: center;
     }
-    #hobbies,#favourites,#education,#acheivements{
+    #hobbies,#favourites,#education,#acheivements,#strengths{
         display: flex;
         position: relative;
         margin: 0 calc(1vw);
@@ -57,6 +57,9 @@
     }
     .fa-trophy{
         color: gold;
+    }
+    .fa-dumbbell{
+        color: rgb(142, 173, 216);
     }
     .initial{
         height: calc(50vh);
@@ -119,6 +122,23 @@
     #description_about4::-webkit-scrollbar{
         display: none;
     }
+    
+
+    #description_about5 ul li{
+        text-align: left!important;
+    }
+    #description_about5 h2{
+        margin-bottom: calc(2vh);
+    }
+    #description_about5 a{
+        color: black;
+    }
+    #description_about5{
+        -ms-overflow-style : none;
+    }
+    #description_about5::-webkit-scrollbar{
+        display: none;
+    }
 }
 @media (max-width:1023px) {
     #about{
@@ -135,7 +155,7 @@
         align-items: center;
         justify-content: center;
     }
-    #hobbies,#favourites,#education,#acheivements{
+    #hobbies,#favourites,#education,#acheivements,#strengths{
         display: flex;
         position: relative;
         margin: calc(2vh) 0;
@@ -159,6 +179,9 @@
     .fa-trophy{
         color: gold;
     }
+    .fa-dumbbell{
+        color: rgb(142, 173, 216);
+    }
     .initial{
         height: calc(5vh);
         width: calc(60vw);
@@ -178,7 +201,7 @@
     .ab-child{
         overflow: scroll;
     }
-    #description_about1,#description_about2,#description_about3,#description_about4{
+    #description_about1,#description_about2,#description_about3,#description_about4,#description_about5{
         padding: 4%;
         font-size: calc(3vw);
     }
@@ -244,8 +267,25 @@
     #description_about4::-webkit-scrollbar{
         display: none;
     }
+
+    #description_about5 ul li{
+        text-align: left!important;
+    }
+    #description_about5 h2{
+        margin-bottom: calc(2vh);
+    }
+    #description_about5 a{
+        color: black;
+    }
+    #description_about5{
+        -ms-overflow-style : none;
+        min-height: 100%;
+    }
+    #description_about5::-webkit-scrollbar{
+        display: none;
+    }
 }
-#hobbies,#favourites,#education,#acheivements
+#hobbies,#favourites,#education,#acheivements,#strengths
 {
     animation: appearup 0.3s linear;
 }
@@ -270,14 +310,9 @@
 #bdy.light #description_about4{
     color: white;
 }
+#bdy.light #description_about5{
+    color: white;
+}
 #bdy.light .about-nav{
     color: black!important;
 }
-/* 
-@media (min-width:1023px) {
-    #close_btn_feedback{
-        position: absolute;
-        top: calc(2vw)!important;
-        right: calc(2vw);
-    }
-} */

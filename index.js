@@ -68,10 +68,11 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
             document.getElementById("description_about2").style.display = "none";
             document.getElementById("description_about3").style.display = "none";
             document.getElementById("description_about4").style.display = "none";
+            document.getElementById("description_about5").style.display = "none";
         }
     }
     //we hide the emoji on click, remember not to worry clicking emoji may result in varying behaviour
-        console.log("In about page");
+    console.log("In about page");
         document.getElementById("hobbies").addEventListener("click", (event) =>
         {
             console.log("hobbies clicked");
@@ -132,6 +133,21 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
                 }
             });
         });
+        document.getElementById("strengths").addEventListener("click", (event) =>
+        {
+            console.log("Strengths clicked");
+            document.getElementById("dumbell").style.display = "none";
+            document.getElementById("description_about5").style.display = "inline";
+            document.addEventListener("click", function(event)
+            {
+                if(event.target.id !== "strengths")
+                {
+                    console.log("closing strengths");
+                    document.getElementById("dumbell").style.display = "inline";
+                    document.getElementById("description_about5").style.display = "none";
+                }
+            });
+        });
     // Light mode and Dark mode
     document.getElementById("toggle_btn").addEventListener("click", function ()
     {
@@ -188,9 +204,10 @@ else{
             document.getElementById("description_about2").style.display = "none";
             document.getElementById("description_about3").style.display = "none";
             document.getElementById("description_about4").style.display = "none";
+            document.getElementById("description_about5").style.display = "none";
         }
     }
-        document.getElementById("hobbies").addEventListener("mouseover", (event) =>
+    document.getElementById("hobbies").addEventListener("mouseover", (event) =>
         {
             var temp_text = "description_about1";
             document.getElementById(temp_text).style.display = "inline";
@@ -230,7 +247,16 @@ else{
             var temp_text = "description_about4";
             document.getElementById(temp_text).style.display = "none";
         });
-
+        document.getElementById("strengths").addEventListener("mouseover", (event) =>
+        {
+            var temp_text = "description_about5";
+            document.getElementById(temp_text).style.display = "inline";
+        });
+        document.getElementById("strengths").addEventListener("mouseleave", (event) =>
+        {
+            var temp_text = "description_about5";
+            document.getElementById(temp_text).style.display = "none";
+        });
     // Light mode and Dark mode
     document.getElementById("toggle_btn").addEventListener("click", function ()
     {
@@ -252,8 +278,6 @@ else{
             container.classList.add(classValue);
         }
     }
-
-    // Resources
 }
 
 
