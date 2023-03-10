@@ -71,8 +71,6 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         }
     }
     //we hide the emoji on click, remember not to worry clicking emoji may result in varying behaviour
-    if(window.location.pathname === "/about.html")
-    {
         console.log("In about page");
         document.getElementById("hobbies").addEventListener("click", (event) =>
         {
@@ -134,7 +132,6 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
                 }
             });
         });
-    }
     // Light mode and Dark mode
     document.getElementById("toggle_btn").addEventListener("click", function ()
     {
@@ -193,8 +190,6 @@ else{
             document.getElementById("description_about4").style.display = "none";
         }
     }
-    if(window.location.pathname === "/about.html")
-    {
         document.getElementById("hobbies").addEventListener("mouseover", (event) =>
         {
             var temp_text = "description_about1";
@@ -235,7 +230,6 @@ else{
             var temp_text = "description_about4";
             document.getElementById(temp_text).style.display = "none";
         });
-    }
 
     // Light mode and Dark mode
     document.getElementById("toggle_btn").addEventListener("click", function ()
