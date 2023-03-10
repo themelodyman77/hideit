@@ -73,6 +73,8 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
     }
     //we hide the emoji on click, remember not to worry clicking emoji may result in varying behaviour
     console.log("In about page");
+    if(window.location.pathname === "/hideit/about.html")
+    {
         document.getElementById("hobbies").addEventListener("click", (event) =>
         {
             console.log("hobbies clicked");
@@ -148,6 +150,7 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
                 }
             });
         });
+    }
     // Light mode and Dark mode
     document.getElementById("toggle_btn").addEventListener("click", function ()
     {
@@ -167,7 +170,6 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         {
             const container= document.getElementById("bdy");
             container.classList.add(classValue);
-            console.log(classValue);
         }
     }
 }
@@ -194,7 +196,9 @@ else{
     });
 
     // About page
-    for(var i=0;i<document.getElementsByClassName("ab-child").length;i++)
+    if(window.location.pathname === "/hideit/about.html")
+    {
+        for(var i=0;i<document.getElementsByClassName("ab-child").length;i++)
     {
         console.log("IM in1");
         var temp = document.getElementsByClassName("ab-child")[i];
@@ -258,6 +262,7 @@ else{
             var temp_text = "description_about5";
             document.getElementById(temp_text).style.display = "none";
         });
+    }
     // Light mode and Dark mode
     document.getElementById("toggle_btn").addEventListener("click", function ()
     {
@@ -270,24 +275,22 @@ else{
             localStorage.removeItem("classValue","light");
         }
     });
-    function initialiser_theme()
-    {
-        const classValue = localStorage.getItem("classValue");
-        if(classValue === "light")
-        {
-            const container= document.getElementById("bdy");
-            container.classList.add(classValue);
-            console.log(classValue);
-        }
-    }
 }
 
 
+function initialiser_theme()
+{
+    const classValue = localStorage.getItem("classValue");
+    if(classValue === "light")
+    {
+        const container= document.getElementById("bdy");
+        container.classList.add(classValue);
+    }
+}
 // Loader
 var loader = document.getElementById("loader_div");
-console.log("Pre loader started");
 window.addEventListener("load", function ()
 {
-    console.log("pre loader closed");
+    console.log("closing the loader");
     loader.style.display = "none";
 });
