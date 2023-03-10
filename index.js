@@ -63,7 +63,7 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         var temp = document.getElementsByClassName("ab-child")[i];
         if(temp.classList[0] == "initial")
         {
-            console.log("Initial display of about box;s txt set none");
+            console.log("Initial display of about box's txt set none");
             document.getElementById("description_about1").style.display = "none";
             document.getElementById("description_about2").style.display = "none";
             document.getElementById("description_about3").style.display = "none";
@@ -71,7 +71,7 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
         }
     }
     //we hide the emoji on click, remember not to worry clicking emoji may result in varying behaviour
-    if(window.location.pathname === "/hideit/about.html")
+    if(window.location.pathname === "/about.html")
     {
         console.log("In about page");
         document.getElementById("hobbies").addEventListener("click", (event) =>
@@ -193,7 +193,7 @@ else{
             document.getElementById("description_about4").style.display = "none";
         }
     }
-    if(window.location.pathname === "/hideit/about.html")
+    if(window.location.pathname === "/about.html")
     {
         document.getElementById("hobbies").addEventListener("mouseover", (event) =>
         {
@@ -258,6 +258,8 @@ else{
             container.classList.add(classValue);
         }
     }
+
+    // Resources
 }
 
 
