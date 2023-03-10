@@ -222,7 +222,7 @@ nav ul li a {
         margin: calc(2vh);
     }
     .icon{
-        font-size: calc(2em);
+        font-size: calc(3em);
     }
     .social-child:hover{
         animation: shake 0.3s;
@@ -564,6 +564,9 @@ label{
     }
     #bdy.light .nav-elements-mini{
         columns: black;
+    }
+    #bdy.light .btn-line{
+        background-color: #ff4d00!important;
     }
 }
 #bdy.light .form{
