@@ -222,7 +222,7 @@ nav ul li a {
         margin: calc(2vh);
     }
     .icon{
-        font-size: calc(3em);
+        font-size: calc(2em);
     }
     .social-child:hover{
         animation: shake 0.3s;
