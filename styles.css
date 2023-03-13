@@ -135,7 +135,6 @@
     #lap-light-img{
         display: none;
         width: calc(30vw + 10vh);
-        position: relative;
         top: calc(7vh);
     }
     .main-lap{
