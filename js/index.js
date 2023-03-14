@@ -73,7 +73,7 @@ if(vp_check_mobile.matches)     // checks for mobile viewport
     }
     //we hide the emoji on click, remember not to worry clicking emoji may result in varying behaviour
     console.log("In about page");
-    if(window.location.pathname.includes("/about.html))
+    if(window.location.pathname.includes("/myportfolio/about.html))
     {
         document.getElementById("hobbies").addEventListener("click", (event) =>
         {
@@ -196,7 +196,7 @@ else{
     });
 
     // About page
-    if(window.location.pathname.includes("/about.html))
+    if(window.location.pathname.includes("/myportfolio/about.html))
     {
         for(var i=0;i<document.getElementsByClassName("ab-child").length;i++)
         {
